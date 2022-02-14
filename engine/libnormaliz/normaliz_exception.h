@@ -27,8 +27,8 @@
 #include <exception>
 #include <string>
 #include <sstream>
-#include <libnormaliz/general.h>
-#include <libnormaliz/cone_property.h>
+#include "libnormaliz/general.h"
+#include "libnormaliz/cone_property.h"
 
 namespace libnormaliz {
 

@@ -30,7 +30,7 @@
 #include <string>
 #include <utility>  // for pair
 
-#include <libnormaliz/cone.h>
+#include "libnormaliz/cone.h"
 
 namespace libnormaliz {
     

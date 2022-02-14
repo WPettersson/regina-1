@@ -29,9 +29,9 @@
 #include <list>
 #include <map>
 
-#include <libnormaliz/general.h>
-#include <libnormaliz/matrix.h>
-#include <libnormaliz/sublattice_representation.h>
+#include "libnormaliz/general.h"
+#include "libnormaliz/matrix.h"
+#include "libnormaliz/sublattice_representation.h"
 #include "libnormaliz/dynamic_bitset.h"
 #include "libnormaliz/automorph.h"
 

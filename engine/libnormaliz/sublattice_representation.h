@@ -38,8 +38,8 @@
 
 #include <vector>
 
-#include <libnormaliz/general.h>
-#include <libnormaliz/matrix.h>
+#include "libnormaliz/general.h"
+#include "libnormaliz/matrix.h"
 
 //---------------------------------------------------------------------------
 

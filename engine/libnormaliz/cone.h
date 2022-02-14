@@ -30,12 +30,12 @@
 #include <string>
 #include <utility>  // for pair
 
-#include <libnormaliz/general.h>
+#include "libnormaliz/general.h"
 #include "libnormaliz/input_type.h"
-#include <libnormaliz/automorph.h>
-#include <libnormaliz/sublattice_representation.h>
-#include <libnormaliz/matrix.h>
-#include <libnormaliz/HilbertSeries.h>
+#include "libnormaliz/automorph.h"
+#include "libnormaliz/sublattice_representation.h"
+#include "libnormaliz/matrix.h"
+#include "libnormaliz/HilbertSeries.h"
 #include "libnormaliz/dynamic_bitset.h"
 
 namespace libnormaliz {

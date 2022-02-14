@@ -31,7 +31,7 @@
 #include <cmath>
 #include <iosfwd>
 
-#include <libnormaliz/general.h>
+#include "libnormaliz/general.h"
 
 // Integer should (may) support:
 // Integer abs(Integer); here implemented as Iabs

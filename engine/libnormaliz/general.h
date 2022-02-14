@@ -30,10 +30,10 @@
 #include <cstddef>
 #include <string>
 
-#include <libnormaliz/dynamic_bitset.h>
+#include "libnormaliz/dynamic_bitset.h"
 
 #ifndef NMZ_MAKEFILE_CLASSIC
-#include <libnormaliz/nmz_config.h>
+#include "libnormaliz/nmz_config.h"
 #endif
 
 #ifdef _WIN32
@@ -146,9 +146,9 @@ void MeasureTime(bool verbose, const std::string& step);
 
 } /* end namespace libnormaliz */
 
-#include <libnormaliz/normaliz_exception.h>
-#include <libnormaliz/input_type.h>
-#include <libnormaliz/cone_property.h>
-#include <libnormaliz/integer.h>
+#include "libnormaliz/normaliz_exception.h"
+#include "libnormaliz/input_type.h"
+#include "libnormaliz/cone_property.h"
+#include "libnormaliz/integer.h"
 
 #endif /* GENERAL_H_ */

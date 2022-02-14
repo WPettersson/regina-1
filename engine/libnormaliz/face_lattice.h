@@ -29,8 +29,8 @@
 #include <list>
 #include <map>
 
-#include <libnormaliz/general.h>
-#include <libnormaliz/matrix.h>
+#include "libnormaliz/general.h"
+#include "libnormaliz/matrix.h"
 #include "libnormaliz/dynamic_bitset.h"
 
 namespace libnormaliz {

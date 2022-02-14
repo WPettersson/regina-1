@@ -22,3 +22,179 @@ index 9f86902df..ac81876b3 100644
 +// #define NMZ_FLINT
 +// #define NMZ_COCOA
 +// #define NORMALIZ_USE_DLL
+
+diff --git a/engine/libnormaliz/HilbertSeries.h b/engine/libnormaliz/HilbertSeries.h
+index 499ea55d7..e7ce72813 100644
+--- a/engine/libnormaliz/HilbertSeries.h
++++ b/engine/libnormaliz/HilbertSeries.h
+@@ -50,7 +50,7 @@
+ #include <ostream>
+ #include <string>
+ 
+-#include <libnormaliz/general.h>
++#include "libnormaliz/general.h"
+ 
+ //---------------------------------------------------------------------------
+ 
+diff --git a/engine/libnormaliz/collection.h b/engine/libnormaliz/collection.h
+index 3d065bfc7..b9aedf4d6 100644
+--- a/engine/libnormaliz/collection.h
++++ b/engine/libnormaliz/collection.h
+@@ -30,7 +30,7 @@
+ #include <string>
+ #include <utility>  // for pair
+ 
+-#include <libnormaliz/cone.h>
++#include "libnormaliz/cone.h"
+ 
+ namespace libnormaliz {
+     
+diff --git a/engine/libnormaliz/cone.h b/engine/libnormaliz/cone.h
+index b2ac720ad..fdd7174d3 100644
+--- a/engine/libnormaliz/cone.h
++++ b/engine/libnormaliz/cone.h
+@@ -30,12 +30,12 @@
+ #include <string>
+ #include <utility>  // for pair
+ 
+-#include <libnormaliz/general.h>
++#include "libnormaliz/general.h"
+ #include "libnormaliz/input_type.h"
+-#include <libnormaliz/automorph.h>
+-#include <libnormaliz/sublattice_representation.h>
+-#include <libnormaliz/matrix.h>
+-#include <libnormaliz/HilbertSeries.h>
++#include "libnormaliz/automorph.h"
++#include "libnormaliz/sublattice_representation.h"
++#include "libnormaliz/matrix.h"
++#include "libnormaliz/HilbertSeries.h"
+ #include "libnormaliz/dynamic_bitset.h"
+ 
+ namespace libnormaliz {
+diff --git a/engine/libnormaliz/descent.h b/engine/libnormaliz/descent.h
+index 19458c4f7..d94f31656 100644
+--- a/engine/libnormaliz/descent.h
++++ b/engine/libnormaliz/descent.h
+@@ -29,9 +29,9 @@
+ #include <list>
+ #include <map>
+ 
+-#include <libnormaliz/general.h>
+-#include <libnormaliz/matrix.h>
+-#include <libnormaliz/sublattice_representation.h>
++#include "libnormaliz/general.h"
++#include "libnormaliz/matrix.h"
++#include "libnormaliz/sublattice_representation.h"
+ #include "libnormaliz/dynamic_bitset.h"
+ #include "libnormaliz/automorph.h"
+ 
+diff --git a/engine/libnormaliz/face_lattice.h b/engine/libnormaliz/face_lattice.h
+index 6812bdaf9..9bf75d114 100644
+--- a/engine/libnormaliz/face_lattice.h
++++ b/engine/libnormaliz/face_lattice.h
+@@ -29,8 +29,8 @@
+ #include <list>
+ #include <map>
+ 
+-#include <libnormaliz/general.h>
+-#include <libnormaliz/matrix.h>
++#include "libnormaliz/general.h"
++#include "libnormaliz/matrix.h"
+ #include "libnormaliz/dynamic_bitset.h"
+ 
+ namespace libnormaliz {
+diff --git a/engine/libnormaliz/general.h b/engine/libnormaliz/general.h
+index db042cd66..df67f51f7 100644
+--- a/engine/libnormaliz/general.h
++++ b/engine/libnormaliz/general.h
+@@ -30,10 +30,10 @@
+ #include <cstddef>
+ #include <string>
+ 
+-#include <libnormaliz/dynamic_bitset.h>
++#include "libnormaliz/dynamic_bitset.h"
+ 
+ #ifndef NMZ_MAKEFILE_CLASSIC
+-#include <libnormaliz/nmz_config.h>
++#include "libnormaliz/nmz_config.h"
+ #endif
+ 
+ #ifdef _WIN32
+@@ -146,9 +146,9 @@ void MeasureTime(bool verbose, const std::string& step);
+ 
+ } /* end namespace libnormaliz */
+ 
+-#include <libnormaliz/normaliz_exception.h>
+-#include <libnormaliz/input_type.h>
+-#include <libnormaliz/cone_property.h>
+-#include <libnormaliz/integer.h>
++#include "libnormaliz/normaliz_exception.h"
++#include "libnormaliz/input_type.h"
++#include "libnormaliz/cone_property.h"
++#include "libnormaliz/integer.h"
+ 
+ #endif /* GENERAL_H_ */
+diff --git a/engine/libnormaliz/integer.h b/engine/libnormaliz/integer.h
+index 1a094e153..fe7d717ed 100644
+--- a/engine/libnormaliz/integer.h
++++ b/engine/libnormaliz/integer.h
+@@ -31,7 +31,7 @@
+ #include <cmath>
+ #include <iosfwd>
+ 
+-#include <libnormaliz/general.h>
++#include "libnormaliz/general.h"
+ 
+ // Integer should (may) support:
+ // Integer abs(Integer); here implemented as Iabs
+diff --git a/engine/libnormaliz/matrix.h b/engine/libnormaliz/matrix.h
+index 966812934..4ad649d9b 100644
+--- a/engine/libnormaliz/matrix.h
++++ b/engine/libnormaliz/matrix.h
+@@ -32,10 +32,10 @@
+ #include <string>
+ #include <cmath>
+ 
+-#include <libnormaliz/general.h>
+-#include <libnormaliz/integer.h>
++#include "libnormaliz/general.h"
++#include "libnormaliz/integer.h"
+ // #include <libnormaliz/convert.h>
+-#include <libnormaliz/vector_operations.h>
++#include "libnormaliz/vector_operations.h"
+ #include "libnormaliz/dynamic_bitset.h"
+ // #include <libnormaliz/sublattice_representation.h>
+ 
+diff --git a/engine/libnormaliz/normaliz_exception.h b/engine/libnormaliz/normaliz_exception.h
+index 4d730586e..877c671b6 100644
+--- a/engine/libnormaliz/normaliz_exception.h
++++ b/engine/libnormaliz/normaliz_exception.h
+@@ -27,8 +27,8 @@
+ #include <exception>
+ #include <string>
+ #include <sstream>
+-#include <libnormaliz/general.h>
+-#include <libnormaliz/cone_property.h>
++#include "libnormaliz/general.h"
++#include "libnormaliz/cone_property.h"
+ 
+ namespace libnormaliz {
+ 
+diff --git a/engine/libnormaliz/sublattice_representation.h b/engine/libnormaliz/sublattice_representation.h
+index 66af43237..48591de2c 100644
+--- a/engine/libnormaliz/sublattice_representation.h
++++ b/engine/libnormaliz/sublattice_representation.h
+@@ -38,8 +38,8 @@
+ 
+ #include <vector>
+ 
+-#include <libnormaliz/general.h>
+-#include <libnormaliz/matrix.h>
++#include "libnormaliz/general.h"
++#include "libnormaliz/matrix.h"
+ 
+ //---------------------------------------------------------------------------
+ 
+-- 
+2.34.1
+
